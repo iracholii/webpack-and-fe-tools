@@ -5,14 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:scripts": "webpack --mode production",
-    "watch:scripts": "webpack --mode development --devtool eval-source-map -w"
+    "build:scripts": "webpack ./src/index.js --mode production",
+    "watch:scripts": "webpack ./src/index.js --mode development --devtool eval-source-map -w"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "webpack": "^5.72.1",
-    "webpack-cli": "^4.9.2"
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
   }
 }
