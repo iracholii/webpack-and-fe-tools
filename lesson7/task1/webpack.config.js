@@ -9,11 +9,11 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.s?css$/i,
+        test: /\.s?css$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
       {
-        test: /\.(jpg|png|gif)$/i,
+        test: /\.(jpg|png|gif)$/,
         use: [
           {
             loader: 'url-loader',
